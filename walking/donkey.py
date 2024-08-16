@@ -11,6 +11,9 @@ class Donkey:
         self.walking = True
         self.date_added = date.today()
 
+    def __str__(self):
+        return f"{self.name} is a {self.species}"
+
     def schedule(self):
         print(
             f"{self.name}, the {self.species}, is available to pet during the {self.shift} shift."
